@@ -1,0 +1,26 @@
+{
+  "name": "@cardano-sdk/cardano-rosetta",
+  "version": "0.1.0",
+  "description": "Rosetta provider for Cardano JS SDK",
+  "engines": {
+    "node": "^14"
+  },
+  "bin": "dist/index.js",
+  "main": "dist/index.js",
+  "repository": "https://github.com/input-output-hk/cardano-js-sdk/packages/cardano-rosetta",
+  "author": "James Sweetland",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build": "tsc --build ./src",
+    "cleanup": "shx rm -rf dist node_modules",
+    "lint": "eslint --ignore-path ../../.eslintignore \"**/*.ts\"",
+    "test": "jest -c ./test/jest.config.js"
+  },
+  "devDependencies": {
+    "shx": "^0.3.3"
+  },
+  "dependencies": {
+    "@cardano-ogmios/client": "^4.0.0-beta.6",
+    "axios": "^0.21.1"
+  }
+}
