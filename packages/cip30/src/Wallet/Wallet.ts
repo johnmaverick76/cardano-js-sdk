@@ -75,7 +75,9 @@ export class Wallet {
     if (this.options.persistAllowList) {
       const currentList = this.getAllowList();
       // Todo: Encrypt
-      this.options.storage?.setItem(this.name, JSON.stringify([...currentList, appName]));
+      if (this.options.storage) {
+        this.options.storage.setItem(this.name, JSON.stringify([...currentList, appName]));
+      }
       this.logger.debug(
         {
           module: 'Wallet',
