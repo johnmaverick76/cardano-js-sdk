@@ -17,7 +17,6 @@
     "lint": "yarn workspaces run lint",
     "tscNoEmit": "yarn workspaces run tscNoEmit",
     "prepare": "husky install",
-    "pre-commit": "lint-staged",
     "mainnet:up": "DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose -p sdk-mainnet up",
     "mainnet:down": "docker-compose -p sdk-mainnet down",
     "test": "yarn workspaces run test",
@@ -25,12 +24,6 @@
     "testnet:up": "DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 OGMIOS_PORT=1338 NETWORK=testnet docker-compose -p sdk-testnet up",
     "testnet:down": "docker-compose -p sdk-testnet down",
     "bump-version": "npx standard-version"
-  },
-  "lint-staged": {
-    "*(apps/**/*.{js,ts}|packages/!(*golden-test-generator)/**/*.{js,ts})": [
-      "yarn lint",
-      "yarn tscNoEmit"
-    ]
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,1 @@
+{"version":3,"file":"handleMessages.d.ts","sourceRoot":"","sources":["../../src/BrowserExtension/handleMessages.ts"],"names":[],"mappings":"AAAA,OAAO,EAAe,MAAM,EAAE,MAAM,QAAQ,CAAC;AAG7C,OAAO,EAAE,SAAS,EAAE,MAAM,WAAW,CAAC;AAEtC,eAAO,MAAM,cAAc,cAAe,SAAS,WAAU,MAAM,KAAiB,IAcnF,CAAC"}

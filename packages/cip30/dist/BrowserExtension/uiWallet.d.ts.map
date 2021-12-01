@@ -1,0 +1,1 @@
+{"version":3,"file":"uiWallet.d.ts","sourceRoot":"","sources":["../../src/BrowserExtension/uiWallet.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,IAAI,CAAC;AAC/B,OAAO,EAAe,MAAM,EAAE,MAAM,QAAQ,CAAC;AAI7C,eAAO,MAAM,cAAc,YAAY,MAAM,KAAiB,SAsB7D,CAAC"}
